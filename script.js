@@ -40,7 +40,7 @@ sound.setAttribute("src",data[0].phonetics[0].audio)
     }
 btn.addEventListener("click", ()=>{
   word()
-  word()
+  
     
 })
 
