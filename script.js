@@ -9,7 +9,8 @@ async function word(){
   let data = await response.json();
   console.log(data);
   try{
-  result.innerHTML = `<div class="word">
+  result.innerHTML = data.map(i=>{
+    return `<div class="word">
        <h3 >${data[0].word}</h3>
        <button onclick="playSound()" id="playSound">
          <span class="material-symbols-outlined">
@@ -32,6 +33,7 @@ async function word(){
      <p class="more">Learn more :</p>
      <code><a href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a></code>`
     
+  })
 sound.setAttribute("src",data[0].phonetics[0].audio) 
 }
   catch(e){
