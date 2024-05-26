@@ -20,7 +20,7 @@ async function word(){
      </div>
      <div class="details">
        <p>pos:</p>
-       <p>/${data[0].meanings[0].partOfSpeech}/</p>
+       <p>/${i.meanings[0].partOfSpeech}/</p>
 
      </div>
      <p class="word-meaning">
