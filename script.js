@@ -11,7 +11,7 @@ async function word(){
   try{
   result.innerHTML = data.map(i=>{
     return `<div class="word">
-       <h3 >${data[0].word}</h3>
+       <h3 >${i.word}</h3>
        <button onclick="playSound()" id="playSound">
          <span class="material-symbols-outlined">
         volume_up
