@@ -31,7 +31,7 @@ async function word(){
      </p>
      
      <p class="more">Learn more :</p>
-     <code><a href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a></code>`
+     <code><a href="${i.sourceUrls[0]}">${data[0].sourceUrls[0]}</a></code>`
     
   })
 sound.setAttribute("src",data[0].phonetics[0].audio) 
